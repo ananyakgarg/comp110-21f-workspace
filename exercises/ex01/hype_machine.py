@@ -1,5 +1,6 @@
-# TODO: Write docstring here
-
-# TODO: Initialize __author__ variable here
-
-# TODO: Implement your program logic here
+"""Take an input and return the input."""
+__author__ = "730475029"
+name: str = input("What is your name? ")
+print(name + " is amazing.")
+print("You're so cool, " + name + ".")
+print("Guess what, " + name + ". You absolutely rock!")
