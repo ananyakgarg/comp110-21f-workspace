@@ -5,9 +5,14 @@ __author__ = "ENTER YOUR 9-DIGIT PID HERE"
 searchLetter: str = input("What letter do you want to search for: ")
 word: str = input("Enter a word: ")
 i: int = 0
-if searchLetter in word:
+occurrenceCount: int = 0
+lengthWord: int = len(word)
+while i < lengthWord:
+    if searchLetter in word:
+        occurrenceCount += 1
     i += 1
-    print("Count: " + str(i))
+    word = word[i:lengthWord]
+if occurrenceCount > 0:
+    print("Count: " + str(occurrenceCount))
 else:
-    if searchLetter not in word:
-        print("Count: 0")
+    print("Count: 0")
