@@ -1,3 +1,6 @@
+"""Fun, interactive python experience."""
+
+__author__ = "730475029"  
 import random
 points: int = 0
 player: str = input("What is your name? ")
